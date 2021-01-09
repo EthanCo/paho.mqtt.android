@@ -1,5 +1,8 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.EthanCo'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -7,7 +10,7 @@ android {
 
     defaultConfig {
         minSdkVersion 9
-        targetSdkVersion 24
+        targetSdkVersion 27
 
         testApplicationId "org.eclipse.paho.android.service.test"
     }
